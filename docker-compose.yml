@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  monitor:
+    image: alext/monitor
+    container_name: monitor
+    restart: unless-stopped
+    network_mode: host
+    privileged: true
+    environment:
+      TZ: Australia/Brisbane
+    volumes:
+      - /home/ubuntu/monitor/config:/config
