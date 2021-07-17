@@ -15,7 +15,3 @@ services:
     command:
       ["bash", "monitor.sh", "-D", "/config", "-b", "-tr"] #PRIMARY NODE
 #       ["bash", "monitor.sh", "-D", "/config", "-tadr"] #HELPER NODE
-
-networks:
-  iot:
-    external: true
