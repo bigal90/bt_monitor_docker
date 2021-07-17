@@ -29,10 +29,4 @@ ENTRYPOINT ["/run.sh"]
 
 ENTRYPOINT ["dumb-init", "--"]
 
-# Standard Operation
-# CMD ["bash", "monitor.sh", "-D", "/config", "-b" "-tr"]
-
-# Helper Operation
-CMD ["bash", "monitor.sh", "-D", "/config", "-tadr"]
-
-# docker build --tag mashupmill/presence-monitor . && docker run --rm -it --name monitor --net host --privileged --volume ~/monitor/config:/config mashupmill/presence-monitor -b -r
+# docker build --tag alext/monitor .
